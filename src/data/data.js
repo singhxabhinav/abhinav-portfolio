@@ -1,19 +1,15 @@
 import ct1 from "../assets/img/image.png";
-import ct2 from "../assets/img/image2.png";
-import ct3 from "../assets/img/image3.png";
-import ct4 from "../assets/img/image4.png";
-import ct5 from "../assets/img/image5.png";
-import ct6 from "../assets/img/image6.png";
+
 import itw1 from "../assets/itw1.png";
-import arch1 from "../assets/arch1.png";
-import jl1 from "../assets/JL1.png";
-import conf1 from "../assets/conf1.png";
+import arch12 from "../assets/arch12.png";
+import jl12 from "../assets/JL12.png";
+import conf1 from "../assets/zeotap.png";
 import mylib1 from "../assets/mylib1.png";
 
 export const socialLinks = [
   {
     id: "github",
-    url: "https://github.com/harsshhit",
+    url: "https://github.com/singhxabhinav",
     iconName: "FaGithub",
     label: "GitHub",
     bgColor: "bg-gray-900",
@@ -24,7 +20,7 @@ export const socialLinks = [
   },
   {
     id: "twitter",
-    url: "https://twitter.com/theharryom?s=09",
+    url: "https://x.com/stfu_abhi",
     iconName: "FaTwitter",
     label: "Twitter",
     bgColor: "bg-blue-400",
@@ -35,7 +31,7 @@ export const socialLinks = [
   },
   {
     id: "linkedin",
-    url: "https://www.linkedin.com/in/harshit-shukla-8b706417a",
+    url: "https://www.linkedin.com/in/abhinavxsingh28/",
     iconName: "FaLinkedin",
     label: "LinkedIn",
     bgColor: "bg-blue-700",
@@ -46,7 +42,7 @@ export const socialLinks = [
   },
   {
     id: "leetcode",
-    url: "https://leetcode.com/harshh8/",
+    url: "https://leetcode.com/u/soberxabhi/",
     iconName: "FaCode",
     label: "LeetCode",
     bgColor: "bg-yellow-400",
@@ -55,39 +51,35 @@ export const socialLinks = [
     hoverBgColor: "hover:bg-yellow-300",
     hoverBorderColor: "hover:border-white",
   },
-  {
-    id: "devto",
-    url: "https://dev.to/your-devto-username",
-    iconName: "FaDev",
-    label: "Dev.to",
-    bgColor: "bg-black",
-    textColor: "text-white",
-    borderColor: "border-gray-700",
-    hoverBgColor: "hover:bg-gray-700",
-    hoverBorderColor: "hover:border-white",
-  },
 ];
 
 export const projectsData = [
   {
     id: 1,
-    title: "Chathere",
+    title: "Uber Trip Analysis",
     description:
-      "A real-time chat app with an intuitive interface, powered by React.js, Firebase, and Node.js.",
-    tags: ["React", "Firebase", "Node.js"],
-    imageUrl: [ct1, ct2, ct3, ct4, ct5, ct6],
-    github: "https://github.com/harsshhit/Chathere",
-    liveLink: "https://chathere-khaki.vercel.app/",
+      "Power BI dashboard analyzing Uber trips in New Jersey (June 2024). Includes booking trends, revenue, peak hours, and spatial insights using DAX, slicers, maps, and drill-through. Features 4 dashboards with KPIs, time, detail, and geospatial analysis.",
+    tags: [
+      "Data Analysis",
+      "Data Visualization",
+      "DAX",
+      "Reporting & Analysis",
+    ],
+    imageUrl: [ct1],
+    github: "https://github.com/singhxabhinav/Uber-Trip-Analysis",
+    liveLink:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7330567842402095105/?originTrackingId=iw9mgg6ITyqQr8qjFTX9rQ%3D%3D",
   },
   {
     id: 2,
-    title: "Into The Wild Stays",
+    title: "Human Activity Recognition Using Smartphone",
     description:
-      "A website for a nature retreat service, offering booking features and beautiful UI.",
-    tags: ["React", "Node.js", "MongoDB"],
+      "Made a ML Model that would classify the Human Activity (WALKING, WALKINGUPSTAIRS, WALKINGDOWNSTAIRS, SITTING, STANDING, LAYING) using various classification techniques.",
+    tags: ["Python", "Machine Learning", "Data Analysis"],
     imageUrl: [itw1],
-    liveLink: "https://intothewildstays.in/",
-    github: "https://github.com/harsshhit/IntoTheWildStays",
+    //
+    github:
+      "https://github.com/singhxabhinav/Human-Activity-Recognition-Using-Smartphone",
   },
   // {
   //   id: 3,
@@ -101,107 +93,55 @@ export const projectsData = [
   // },
   {
     id: 4,
-    title: "ArchSpace Interio",
+    title: "Walmart Sales Data Analysis Using SQL",
     description:
-      "A modern website for an interior design company, featuring an elegant UI and smooth animations.",
-    tags: ["Next.js", "Tailwind CSS"],
-    imageUrl: [arch1], // Add images if available
-    liveLink: "https://archspaceinterio.com/",
-    github: "https://github.com/harsshhit/ArchSpaceInterio",
+      "This project analyzes Walmart's sales data using advanced SQL techniques like window functions and CTEs & subqueries. Key insights were extracted by performing aggregations, ranking, and filtering to uncover trends in sales performance. The project demonstrates strong SQL query writing and data analysis skills.",
+    tags: ["MySQL", "Data Analysis"],
+    imageUrl: [arch12], // Add images if available
+    // liveLink: "https://archspaceinterio.com/",
+    github: "https://github.com/singhxabhinav/Walmart-sales-analysis-SQL",
   },
   {
     id: 5,
-    title: "Job Listing",
+    title: "Car Sales  Analysis Dashboard",
     description:
-      "A job listing platform with filtering and search functionality.",
-    tags: ["React", "Redux", "Tailwind CSS"],
-    imageUrl: [jl1],
-    liveLink: "https://joblisting-seven.vercel.app/",
-    github: "https://github.com/harsshhit/joblisting",
+      "Interactive Power BI dashboard analyzing car sales data across top brands. Features key metrics, market share, top models by revenue, sales trends, and brand value comparison. Built with Power BI Desktop, DAX, and data visualization techniques.",
+    tags: ["Power Bi", "DAX", "Reporting & Analysis"],
+    imageUrl: [jl12],
+    //liveLink: "https://joblisting-seven.vercel.app/",
+    github: "https://github.com/singhxabhinav/Car-sales-dashboard-analysis",
   },
   {
     id: 6,
-    title: "Conference App",
+    title: "Zeotap Assessment",
     description:
-      "A MERN stack application for managing and scheduling conferences.",
-    tags: ["MERN", "MongoDB", "Express", "React", "Node.js"],
+      "Assessment for data science intern which show my skills in EDA ,Report Building and Time Management",
+    tags: ["Python", "MS Word", "Machine Learning", "Report Building"],
     imageUrl: [conf1],
-    liveLink: "https://conference-mern-frontend.vercel.app/",
-    github: "https://github.com/harsshhit/conference-mern-frontend",
-  },
-  {
-    id: 7,
-    title: "My Library",
-    description:
-      "A personal book library management app to track reading progress.",
-    tags: ["React", "Node.js", "MongoDB"],
-    imageUrl: [mylib1],
-    liveLink: "https://aaralibrary.vercel.app/",
-    github: "https://github.com/harsshhit/MyLibrary",
-  },
-];
-
-export const experienceData = [
-  {
-    id: 1,
-    title: "Frontend Developer",
-    company: "House of Marktech",
-    duration: "Sept 2024 - Dec 2024",
-    description: [
-      "Developed and maintained responsive web applications using React.js",
-      "Collaborated with the design team to implement pixel-perfect UI components",
-      "Optimized application performance and improved user experience",
-      "Participated in code reviews and team meetings",
-    ],
-    tags: [
-      "React.js",
-      "UI/UX",
-      "Performance Optimization",
-      "Team Collaboration",
-    ],
+    //liveLink: "https://conference-mern-frontend.vercel.app/",
+    github: "https://github.com/singhxabhinav/Zeotap-Assessment",
   },
 ];
 
 export const skillsData = {
-  programmingLanguages: ["C++", "JavaScript", "TypeScript"],
-  frontendTechnologies: [
-    "React.js",
-    "Next.js",
-    "Redux",
-    "Tailwind CSS",
-    "HTML5",
-    "CSS3",
-    "SASS",
+  programmingLanguages: ["C", "C++", "Python"],
+  DataAnalysis: [
+    "Python",
+    "SQl",
+    "Power Bi",
+    "MS Excel",
+    "Predictive Analysis",
   ],
-  backendAndDatabase: [
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "MySQL",
-    "GraphQL",
-    "RESTful APIs",
-    "WebSocket",
-    "Database Modeling",
-  ],
+  backendAndDatabase: ["MongoDB", "MySQL", "SQlite 3", "Database Modeling"],
   developmentTools: [
     "Git & GitHub",
     "CI/CD pipelines",
     "Docker",
     "Agile/Scrum methodologies",
   ],
-  testingAndQuality: [
-    "Unit Testing (Jest, Mocha)",
-    "Integration Testing",
-    "Quality Assurance",
-  ],
-  coreStrengths: [
-    "MERN Stack Development",
-    "Object-Oriented Programming (OOP)",
-    "Data Structures and Algorithms",
-  ],
 };
 
 export const resumeCVData = {
   resumeLink:
-    "https://www.canva.com/design/DAGIzEBuFMw/-5cJ772Ooyji5XfJDZVZug/view?utm_content=DAGIzEBuFMw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h054c5c861a",
+    "https://www.canva.com/design/DAGpfVbNRUM/oIzg1llKjsy98LyaCreIWg/edit?utm_content=DAGpfVbNRUM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
 };
