@@ -1,6 +1,6 @@
 import { Briefcase } from "lucide-react";
 import { Code, Star } from "lucide-react";
-import { experienceData } from "../data/data.js";      
+//import { experienceData } from "../data/data.js";      //changed : ../data/data
 // import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
