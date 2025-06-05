@@ -2,7 +2,7 @@ import ct1 from "../assets/img/image.png";
 
 import itw1 from "../assets/itw1.png";
 import arch12 from "../assets/arch12.png";
-import jl12 from "../assets/JL12.png";
+import jl12 from "../assets/jl12.png";
 import conf1 from "../assets/zeotap.png";
 //import mylib1 from "../assets/mylib1.png";
 
