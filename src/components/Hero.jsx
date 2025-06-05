@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Code } from "lucide-react";
 import { useState, useEffect } from "react";
-import profile from "../assets/profile.png";
+import profile from "../assets/profile-pic.png";
 
 const Hero = () => {
   // State for image loading
@@ -54,7 +54,7 @@ const Hero = () => {
           <div className="relative w-[220px] h-[220px] xs:w-[280px] xs:h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px]">
             <motion.div
               className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full blur-3xl opacity-10"
-             // {...floatingAnimation}
+              // {...floatingAnimation}
             />
             <div className="relative z-10 w-full h-full rounded-full border-4 border-[#262626] shadow-2xl shadow-black/20 overflow-hidden">
               {/* Loading skeleton */}
@@ -63,8 +63,8 @@ const Hero = () => {
               )}
               <motion.img
                 src={profile}
-                alt="Harshit - Software Developer"
-                className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                alt="Abhinav  - Data Enthusiast"
+                className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
                 onLoad={handleImageLoad}
                 loading="eager"
                 fetchpriority="high"
@@ -86,10 +86,10 @@ const Hero = () => {
               Hello, I&apos;m
             </h2>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 text-center md:text-left">
-              Harshit
+              Abhinav
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-300 font-semibold mb-4 md:mb-6 flex items-center gap-3 justify-center md:justify-start">
-              Software Developer <Code className="text-blue-400" />
+              Data Enthusiast <Code className="text-blue-400" />
             </h2>
           </motion.div>
 
@@ -97,12 +97,16 @@ const Hero = () => {
             className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 md:mb-8 max-w-xl mx-auto md:mx-0 text-center md:text-left"
             initial={{ opacity: 0, y: prefersReducedMotion ? 5 : 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: prefersReducedMotion ? 0.1 : 0.3, duration: prefersReducedMotion ? 0.2 : 0.6 }}
+            transition={{
+              delay: prefersReducedMotion ? 0.1 : 0.3,
+              duration: prefersReducedMotion ? 0.2 : 0.6,
+            }}
           >
-            Crafting immersive digital experiences that seamlessly integrate
-            innovative technology with sophisticated design. Transforming
-            visionary concepts into captivating web solutions that not only
-            inspire but also engage users on multiple levels.
+            Bachelor Of Technology graduate proficient in Power Bi, Data
+            Analysis, and Web Scraping. Experience in Pandas, Numpy, and Mysql
+            with a passion for leveraging data to make informed decisions.
+            Seeking opportunities in the world of data. View my portfolio of
+            projects and get in touch for collaboration.
           </motion.p>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
@@ -134,14 +138,17 @@ const Hero = () => {
             className="text-gray-400 mt-6 md:mt-8 text-center md:text-left text-sm md:text-base"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: prefersReducedMotion ? 0.3 : 0.9, duration: prefersReducedMotion ? 0.3 : 0.6 }}
+            transition={{
+              delay: prefersReducedMotion ? 0.3 : 0.9,
+              duration: prefersReducedMotion ? 0.3 : 0.6,
+            }}
           >
             <a
-              href="mailto:harshitshuklaharsh8@gmail.com"
+              href="mailto:abhinavxsingh28@gmail.com"
               className="hover:text-blue-400 transition-colors duration-300"
-              aria-label="Email me at harshitshuklaharsh8@gmail.com"
+              aria-label="Email me at abhinavxsingh28@gmail.com"
             >
-              harshitshuklaharsh8@gmail.com
+              abhinavxsingh28@gmail.com
             </a>
           </motion.div>
         </motion.div>

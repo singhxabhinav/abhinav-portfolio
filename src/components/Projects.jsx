@@ -112,8 +112,9 @@ export default function Projects() {
             <Star className="text-blue-400" />
           </h2>
           <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
-            A showcase of innovative web applications that demonstrate my skills
-            in full-stack development
+            A showcase of innovative data analysis projects that demonstrate my
+            skills in data visualization, statistical analysis, and machine
+            learning
           </p>
         </div>
 
@@ -122,7 +123,6 @@ export default function Projects() {
           {projectsData.map((project) => (
             <div key={project.id}>
               <Project {...project} />
-
             </div>
           ))}
         </div>
@@ -130,5 +130,3 @@ export default function Projects() {
     </div>
   );
 }
-
-

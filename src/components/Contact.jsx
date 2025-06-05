@@ -1,32 +1,32 @@
 import { FaEnvelope, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import { useState } from 'react';
+import { useState } from "react";
 
 function Contact() {
   // Initialize with a state value
-  const [formState, setFormState] = useState('idle'); // 'idle', 'sending', 'success', 'error'
+  const [formState, setFormState] = useState("idle"); // 'idle', 'sending', 'success', 'error'
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setFormState('sending'); // Update form state
+    setFormState("sending"); // Update form state
 
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         e.target,
-        import.meta.env.VITE_EMAILJS_USER_ID
+        import.meta.env.VITE_EMAILJS_USER_ID,
       )
       .then(
         (result) => {
           console.log(result.text);
-          setFormState('success'); // Update form state
+          setFormState("success"); // Update form state
         },
         (error) => {
           console.log(error.text);
-          setFormState('error'); // Update form state
-        }
+          setFormState("error"); // Update form state
+        },
       );
   };
 
@@ -104,24 +104,25 @@ function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                disabled={formState === 'sending'}
+                disabled={formState === "sending"}
                 className={`group relative px-8 py-3 rounded-lg bg-neutral-900 text-white font-medium
                   border border-neutral-800 hover:border-neutral-700 transition-all duration-300
                   flex items-center gap-2 w-full md:w-auto justify-center
-                  ${formState === 'sending' ? 'opacity-70 cursor-not-allowed' : ''}`}
+                  ${formState === "sending" ? "opacity-70 cursor-not-allowed" : ""}`}
               >
-                {formState === 'sending' ? 'Sending...' : 'Send Message'}
+                {formState === "sending" ? "Sending..." : "Send Message"}
               </motion.button>
 
-              {formState === 'success' && (
+              {formState === "success" && (
                 <div className="mt-4 p-3 bg-green-900/30 text-green-400 rounded-lg">
                   Message sent successfully! I'll get back to you soon.
                 </div>
               )}
 
-              {formState === 'error' && (
+              {formState === "error" && (
                 <div className="mt-4 p-3 bg-red-900/30 text-red-400 rounded-lg">
-                  There was an error sending your message. Please try again later.
+                  There was an error sending your message. Please try again
+                  later.
                 </div>
               )}
             </form>
@@ -137,26 +138,26 @@ function Contact() {
               {
                 icon: <FaWhatsapp className="text-6xl text-green-400" />,
                 title: "WhatsApp",
-                link: "https://api.whatsapp.com/send?phone=6394887052",
-                label: "+91 6394887052",
+                link: "https://api.whatsapp.com/send?phone=9805367767",
+                label: "+91 9805367767",
               },
               {
                 icon: <FaEnvelope className="text-6xl text-blue-400" />,
                 title: "Email",
-                link: "mailto:harshitshuklaharsh8@gmail.com",
-                label: "harshitshuklaharsh8@gmail.com",
+                link: "mailto:abhinavxsingh28@gmail.com",
+                label: "abhinavxsingh28@gmail.com",
               },
               {
                 icon: <FaLinkedin className="text-6xl text-blue-600" />,
                 title: "LinkedIn",
-                link: "https://www.linkedin.com/in/harshit-shukla-dev",
-                label: "Harshit Shukla",
+                link: "https://www.linkedin.com/in/abhinavxsingh28/",
+                label: "Abhinav Singh",
               },
               {
                 icon: <FaGithub className="text-6xl text-gray-300" />,
                 title: "GitHub",
-                link: "https://github.com/harshitshukla",
-                label: "harshitshukla",
+                link: "https://github.com/singhxabhinav",
+                label: "singhxabhinav",
               },
             ].map((contact, index) => (
               <motion.div
@@ -191,7 +192,7 @@ function Contact() {
           className="mt-12 text-center"
         >
           <p className="text-gray-400 text-sm">
-            © 2024 Harshit Shukla. All Rights Reserved.
+            © 2025 Abhinav Singh. All Rights Reserved.
           </p>
         </motion.div>
       </div>
@@ -211,6 +212,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-

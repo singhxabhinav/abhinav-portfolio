@@ -1,6 +1,6 @@
 import { FileText } from "lucide-react";
 import { motion } from "framer-motion";
-import resumelogo from "../assets/resumeimage.png";
+import resumelogo from "../assets/profile-pic.png";
 import "../index.css";
 import { resumeCVData } from "../data/data";
 
@@ -30,10 +30,13 @@ function Resume() {
           </h1>
 
           <p className="text-lg text-neutral-400 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-            Welcome! I&apos;m a passionate full-stack Developer skilled in the
-            MERN stack, and I enjoy crafting smooth, user-friendly experiences
-            on the web. Check out my resume below to see my journey and skills
-            in detail.
+            Welcome! I&apos;m a passionate and results-driven data enthusiast
+            with practical experience in Power BI, SQL, and Python, gained
+            through impactful internship work and real-world projects. From
+            building automated dashboards to developing end-to-end data
+            solutions, I thrive on turning raw data into meaningful business
+            insights. Check out my resume below to see my journey and skills in
+            detail.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-4">
@@ -68,9 +71,7 @@ function Resume() {
                 />
               </div>
             </div>
-            <div className="absolute bottom-4 right-4 text-neutral-400 text-xs font-medium bg-black/50 backdrop-blur-sm px-2 py-1 rounded-md border border-neutral-800">
-              AI generated image
-            </div>
+            <div className="absolute bottom-4 right-4 text-neutral-400 text-xs font-medium bg-black/50 backdrop-blur-sm px-2 py-1 rounded-md border border-neutral-800"></div>
           </div>
         </motion.div>
       </div>

@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { BiSolidUser, BiSolidBook } from "react-icons/bi";
 import { RiToolsFill, RiFileHistoryFill } from "react-icons/ri";
-import {  BsFillFileEarmarkPdfFill, BsFillChatRightDotsFill } from "react-icons/bs";
+import {
+  BsFillFileEarmarkPdfFill,
+  BsFillChatRightDotsFill,
+} from "react-icons/bs";
 import { FaGithub, FaTwitter, FaLinkedin, FaCode, FaDev } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useHeaderContext } from "../context/HeaderContext";
-import { socialLinks } from "../data/data";
-import resumelogo from "../assets/resumelogo2svg.png";
+import { socialLinks } from "../data/data.js";
+import resumelogo from "../assets/resumelogo2svg.png"; //
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -22,10 +25,10 @@ const Header = () => {
     };
 
     checkMobile();
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
 
     return () => {
-      window.removeEventListener('resize', checkMobile);
+      window.removeEventListener("resize", checkMobile);
     };
   }, []);
 
@@ -104,13 +107,15 @@ const Header = () => {
         className="relative flex items-center justify-center w-full"
         layout
         style={{
-          filter: showSocials ? 'drop-shadow(0 0 10px rgba(59, 130, 246, 0.3))' : 'none',
-          transition: 'filter 0.3s ease-in-out'
+          filter: showSocials
+            ? "drop-shadow(0 0 10px rgba(59, 130, 246, 0.3))"
+            : "none",
+          transition: "filter 0.3s ease-in-out",
         }}
       >
         <motion.ul
           className={`flex flex-wrap gap-2 xs:gap-2.5 sm:gap-3 md:gap-3.5 justify-center bg-gradient-to-r from-[#111111]/95 via-[#111111]/98 to-[#111111]/95 rounded-full p-2 xs:p-2.5 sm:p-3 md:p-3.5 backdrop-blur-xl
-                    border ${showSocials ? 'border-blue-500/40' : 'border-[#262626]'} shadow-lg ${showSocials ? 'shadow-blue-500/20' : 'shadow-black/20'} transition-all duration-300 overflow-visible`}
+                    border ${showSocials ? "border-blue-500/40" : "border-[#262626]"} shadow-lg ${showSocials ? "shadow-blue-500/20" : "shadow-black/20"} transition-all duration-300 overflow-visible`}
           layout
         >
           {navItems.map((item) => (
@@ -133,11 +138,12 @@ const Header = () => {
                 onBlur={() => !isMobile && setHoveredItem(null)}
                 className={`p-2.5 xs:p-3 sm:p-3.5 md:p-4 lg:p-4.5 rounded-full text-gray-300 flex transition-all duration-300
                           hover:text-white hover:scale-110 transform-gpu text-lg xs:text-xl sm:text-xl md:text-2xl
-                          ${activeNav === item.id
-                      ? "text-blue-400 bg-[#1a1a1a] border border-blue-500/50 scale-105"
-                      : "hover:bg-[#1a1a1a]"
-                  }`}
-                aria-label={`Navigate to ${item.label || item.id.replace('#', '') || 'home'} section`}
+                          ${
+                            activeNav === item.id
+                              ? "text-blue-400 bg-[#1a1a1a] border border-blue-500/50 scale-105"
+                              : "hover:bg-[#1a1a1a]"
+                          }`}
+                aria-label={`Navigate to ${item.label || item.id.replace("#", "") || "home"} section`}
               >
                 {item.icon}
               </a>
@@ -178,9 +184,11 @@ const Header = () => {
               onBlur={() => !isMobile && setHoveredItem(null)}
               className={`p-2 xs:p-2.5 sm:p-3 md:p-3.5 lg:p-4 rounded-full flex items-center justify-center transition-all duration-300
                         hover:text-white hover:scale-110 transform-gpu text-lg xs:text-xl sm:text-xl md:text-2xl group
-                        ${showSocials
-                  ? "text-purple-400 bg-[#1a1a1a] border border-purple-500/50 scale-105 rotate-45"
-                  : "text-gray-300 hover:bg-[#1a1a1a]"}`}
+                        ${
+                          showSocials
+                            ? "text-purple-400 bg-[#1a1a1a] border border-purple-500/50 scale-105 rotate-45"
+                            : "text-gray-300 hover:bg-[#1a1a1a]"
+                        }`}
               aria-label="Toggle social links"
               aria-expanded={showSocials}
             >

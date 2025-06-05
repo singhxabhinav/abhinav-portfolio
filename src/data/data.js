@@ -122,6 +122,26 @@ export const projectsData = [
     github: "https://github.com/singhxabhinav/Zeotap-Assessment",
   },
 ];
+export const experienceData = [
+  {
+    id: 1,
+    title: "Frontend Developer",
+    company: "House of Marktech",
+    duration: "Sept 2024 - Dec 2024",
+    description: [
+      "During my internship at S.O Infotech (P) Ltd, I strengthened my skills in Power BI, SQL, and Python.",
+      "I gained hands-on experience in collaborative project execution and real-world problem-solving",
+      "I performed web scraping and used Selenium for automating data collection through web drivers.",
+      "I also built a Face Recognition and Automatic Attendance System using OpenCV.",
+    ],
+    tags: [
+      "Python",
+      "MySql",
+      "Power Bi",
+      "Data Analysis",
+      "Team Collaboration",
+    ],
+  },
 
 export const skillsData = {
   programmingLanguages: ["C", "C++", "Python"],
