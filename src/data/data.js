@@ -142,6 +142,7 @@ export const experienceData = [
       "Team Collaboration",
     ],
   },
+];
 
 export const skillsData = {
   programmingLanguages: ["C", "C++", "Python"],
