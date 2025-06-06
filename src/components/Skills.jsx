@@ -44,7 +44,7 @@ function Skills() {
                 { icon: <SiMicrosoftexcel color="#F7DF1E" />, name: "MS Excel" },
                 { icon: <SiApachehadoop color="#66CCFF" />, name: "Hadoop" },
                 { icon: <SiApachespark color="#E25A1C" />, name: "Spark" },
-                { icon: <SiC color="#A8B9CC" />, name: "C" }
+                { icon: <SiC color="#A8B9CC" />, name: "C" },
               //  { icon: <FaReact color="#61DAFB" />, name: "React" },
               //  { icon: <SiRedux color="#764ABC" />, name: "Redux" },
               //  { icon: <SiNextdotjs color="#FFFFFF" />, name: "Next.js" },
