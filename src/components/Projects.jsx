@@ -35,45 +35,46 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
       }}
       className="group mb-3 sm:mb-8 sm:pb-3 last:mb-0"
     >
-      <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative sm:h-[28rem] md:h-96 transition sm:group-even:pl-8 flex flex-col justify-between">
-        <div className="pt-4 pb-4 px-4 sm:px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <div>
-            <h3 className="text-2xl font-semibold text-white">{title}</h3>
-            <p className="mt-2 leading-relaxed text-gray-300">{description}</p>
+      <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative sm:h-[28rem] md:h-96 transition sm:group-even:pl-8">
+        <div className="pt-4 pb-7 px-4 sm:px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+          <h3 className="text-2xl font-semibold text-white">{title}</h3>
 
-            <ul className="flex flex-wrap mt-4 sm:mt-6 gap-2">
-              {tags?.map((tag, index) => (
-                <li
-                  key={index}
-                  className="bg-[#1a1a1a] px-3 py-1 text-xs uppercase tracking-wider text-gray-300 rounded-full flex items-center border border-[#262626]"
-                >
-                  <span className="mr-1">
-                    {tag === "React" && <FaReact className="text-blue-400" />}
-                    {tag === "Firebase" && <FaFire className="text-orange-500" />}
-                    {tag === "Node.js" && <FaNodeJs className="text-green-500" />}
-                  </span>
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p className="mt-2 leading-relaxed text-gray-300">{description}</p>
 
-          <div className="flex gap-4 mt-6">
+          <ul className="flex flex-wrap mt-4 sm:mt-6 gap-2">
+            {tags?.map((tag, index) => (
+              <li
+                key={index}
+                className="bg-[#1a1a1a] px-3 py-1 text-xs uppercase tracking-wider text-gray-300 rounded-full flex items-center border border-[#262626]"
+              >
+                <span className="mr-1">
+                  {tag === "React" && <FaReact className="text-blue-400" />}
+                  {tag === "Firebase" && <FaFire className="text-orange-500" />}
+                  {tag === "Node.js" && <FaNodeJs className="text-green-500" />}
+                </span>
+                {tag}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
             <a
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1a1a1a] text-white py-2 px-4 rounded hover:bg-[#333] flex items-center gap-2"
+              className="button flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center py-2 sm:py-3 px-4 sm:px-6"
             >
-              <FaGithub className="text-lg sm:text-xl" /> Github
+              <FaGithub className="text-lg sm:text-xl" />
+              Github
             </a>
             <a
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1a1a1a] text-white py-2 px-4 rounded hover:bg-[#333] flex items-center gap-2"
+              className="button-primary flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center py-2 sm:py-3 px-4 sm:px-6"
             >
-              <ExternalLink className="text-lg sm:text-xl" /> Live
+              <ExternalLink className="text-lg sm:text-xl" />
+              Live
             </a>
           </div>
         </div>
@@ -99,9 +100,11 @@ export default function Projects() {
       id="projects"
       className="relative min-h-screen bg-black text-white py-12 sm:py-16 md:py-32 flex justify-center items-center overflow-hidden"
     >
+      {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
       <div className="container mx-auto relative z-10 px-6">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="section-title flex items-center justify-center gap-4">
             <Code className="text-blue-400" />
@@ -115,6 +118,7 @@ export default function Projects() {
           </p>
         </div>
 
+        {/* Projects Container */}
         <div className="w-full max-w-6xl space-y-12">
           {projectsData.map((project) => (
             <div key={project.id}>
