@@ -35,11 +35,11 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
       }}
       className="group mb-3 sm:mb-8 sm:pb-3 last:mb-0"
     >
-      <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative sm:h-[32rem] md:h-96 transition sm:group-even:pl-8">
+      <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative sm:h-[32rem] md:h-[36rem] transition sm:group-even:pl-8">
         <div className="pt-4 pb-7 px-4 sm:px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold text-white">{title}</h3>
 
-          <p className="mt-2 leading-relaxed text-gray-300">{description}</p>
+          <p className="mt-2 leading-relaxed text-sm-gray-300">{description}</p>
 
           <ul className="flex flex-wrap mt-4 sm:mt-6 gap-2">
             {tags?.map((tag, index) => (
