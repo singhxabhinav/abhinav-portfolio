@@ -13,13 +13,23 @@ export default function Journey() {
             How I Got Into This Field
           </h2>
           <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
-            My journey into data and analytics started with a strong curiosity about
-            how decisions are driven by data. During my academic projects, I explored
-            Python and SQL, which led me to build small insights dashboards and
-            automate data pipelines. Interning at S.O Infotech gave me real-world
-            exposure to Power BI, web scraping with Selenium, and even building a face
-            recognition system using OpenCV. These hands-on experiences solidified my
-            interest in the field and motivated me to pursue data analytics as a career.
+            When my mom said, “Drink water while sitting; it’s better for your
+            health,” my first reaction wasn’t to listen—it was to investigate.
+            Where’s the data? What study proves this? I wasn’t just curious; I
+            needed cold, hard stats.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
+            So, I went down the rabbit hole YouTube videos, scientific papers,
+            hydration graphs analyzing patterns like a detective. I even ran my
+            own “experiments” (drinking water standing, sitting, even mid-squat)
+            just to test the logic. Turns out, I didn’t just quench my thirst, I
+            discovered my love for data.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
+            That mindset led me to data science, where I turn raw numbers into
+            insights, challenge assumptions, and find patterns others miss. From
+            building ML models to visualizing trends, I don’t just analyze
+            data—I make it tell a story.
           </p>
         </div>
 
