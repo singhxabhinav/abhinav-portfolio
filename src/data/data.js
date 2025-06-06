@@ -77,7 +77,7 @@ export const projectsData = [
       "Made a ML Model that would classify the Human Activity (WALKING, WALKINGUPSTAIRS, WALKINGDOWNSTAIRS, SITTING, STANDING, LAYING) using various classification techniques.",
     tags: ["Python", "Machine Learning", "Data Analysis"],
     imageUrl: [itw1],
- 
+
     github:
       "https://github.com/singhxabhinav/Human-Activity-Recognition-Using-Smartphone",
   },
@@ -98,7 +98,7 @@ export const projectsData = [
       "This project analyzes Walmart's sales data using advanced SQL techniques like window functions and CTEs & subqueries. Key insights were extracted by performing aggregations, ranking, and filtering to uncover trends in sales performance. The project demonstrates strong SQL query writing and data analysis skills.",
     tags: ["MySQL", "Data Analysis"],
     imageUrl: [arch12], // Add images if available
-    
+
     github: "https://github.com/singhxabhinav/Walmart-sales-analysis-SQL",
   },
   {
@@ -108,7 +108,7 @@ export const projectsData = [
       "Interactive Power BI dashboard analyzing car sales data across top brands. Features key metrics, market share, top models by revenue, sales trends, and brand value comparison. Built with Power BI Desktop, DAX, and data visualization techniques.",
     tags: ["Power Bi", "DAX", "Reporting & Analysis"],
     imageUrl: [jl12],
-    
+
     github: "https://github.com/singhxabhinav/Car-sales-dashboard-analysis",
   },
   {
@@ -118,7 +118,7 @@ export const projectsData = [
       "Assessment for data science intern which show my skills in EDA ,Report Building and Time Management",
     tags: ["Python", "MS Word", "Machine Learning", "Report Building"],
     imageUrl: [conf1],
-   
+
     github: "https://github.com/singhxabhinav/Zeotap-Assessment",
   },
 ];
@@ -127,7 +127,7 @@ export const experienceData = [
     id: 1,
     title: "Python Trainee",
     company: "S.O Infotech Pvt Ltd",
-    duration: "Jan 2024 - Jun 2024",
+    duration: "Jun 2024 - Jan 2024",
     description: [
       "During my internship at S.O Infotech (P) Ltd, I strengthened my skills in Power BI, SQL, and Python.",
       "I gained hands-on experience in collaborative project execution and real-world problem-solving",
