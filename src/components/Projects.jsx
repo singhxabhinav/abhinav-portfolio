@@ -45,7 +45,7 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
             {tags?.map((tag, index) => (
               <li
                 key={index}
-                className="bg-[#1a1a1a] px-5 py-1 text-xs uppercase tracking-wider text-gray-300 rounded-full flex items-center border border-[#262626]"
+                className="bg-[#1a1a1a] px-3 py-1 text-xs uppercase tracking-wider text-gray-300 rounded-full flex items-center border border-[#262626]"
               >
                 <span className="mr-1">
                   {tag === "React" && <FaReact className="text-blue-400" />}
