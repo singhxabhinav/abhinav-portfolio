@@ -125,9 +125,9 @@ export const projectsData = [
 export const experienceData = [
   {
     id: 1,
-    title: "Frontend Developer",
-    company: "House of Marktech",
-    duration: "Sept 2024 - Dec 2024",
+    title: "Python Trainee",
+    company: "S.O Infotech Pvt Ltd",
+    duration: "Jan 2024 - Jun 2024",
     description: [
       "During my internship at S.O Infotech (P) Ltd, I strengthened my skills in Power BI, SQL, and Python.",
       "I gained hands-on experience in collaborative project execution and real-world problem-solving",

@@ -156,7 +156,7 @@ function Contact() {
               {
                 icon: <FaGithub className="text-6xl text-gray-300" />,
                 title: "GitHub",
-                link: "https://github.com/singhxabhinav",
+                link: "https://github.com/singhxabhinav/",
                 label: "singhxabhinav",
               },
             ].map((contact, index) => (

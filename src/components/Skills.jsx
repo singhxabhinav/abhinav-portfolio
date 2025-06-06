@@ -1,18 +1,17 @@
 import {  useRef } from "react";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
+  FaPython,
   FaGithub,
 } from "react-icons/fa";
 import {
-  SiExpress,
+  SiC,                                                                          // To be check
+  
+  SiPowerbi,
   SiMongodb,
   SiMysql,
-  SiNextdotjs,
-  SiRedux,
+  SiApachehadoop,
+  SiMicrosoftexcel,
+  SiApachespark,
 } from "react-icons/si";
 import { DiDocker } from "react-icons/di";
 import { Code, Star, Server } from "lucide-react";
@@ -40,14 +39,17 @@ function Skills() {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
               {[
-                { icon: <FaHtml5 color="#E34F26" />, name: "HTML5" },
-                { icon: <FaCss3Alt color="#1572B6" />, name: "CSS3" },
-                { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
-                { icon: <FaReact color="#61DAFB" />, name: "React" },
-                { icon: <SiRedux color="#764ABC" />, name: "Redux" },
-                { icon: <SiNextdotjs color="#FFFFFF" />, name: "Next.js" },
-                { icon: <FaNodeJs color="#339933" />, name: "Node.js" },
-                { icon: <SiExpress color="#FFFFFF" />, name: "Express" },
+                { icon: <FaPython color="#E34F26" />, name: "Python" },
+                { icon: <SiPowerbi color="#1572B6" />, name: "Power Bi" },
+                { icon: <SiMicrosoftexcel color="#F7DF1E" />, name: "MS Excel" },
+                { icon: <SiApachehadoop color="#66CCFF" />, name: "Hadoop" },
+                { icon: <SiApachespark color="#E25A1C" />, name: "Spark" },
+                { icon: <SiC color="#A8B9CC" />, name: "C" }
+              //  { icon: <FaReact color="#61DAFB" />, name: "React" },
+              //  { icon: <SiRedux color="#764ABC" />, name: "Redux" },
+              //  { icon: <SiNextdotjs color="#FFFFFF" />, name: "Next.js" },
+              //  { icon: <FaNodeJs color="#339933" />, name: "Node.js" },
+              //  { icon: <SiExpress color="#FFFFFF" />, name: "Express" },
                 { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
                 { icon: <FaGithub color="#181717" />, name: "GitHub" },
                 { icon: <SiMysql color="#00758F" />, name: "MySQL" },
@@ -73,30 +75,30 @@ function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <SkillSection
-            title="Frontend Technologies"
+            title="Data Technologies"
             skills={[
-              "React.js",
-              "Next.js",
-              "Redux",
-              "Tailwind CSS",
-              "HTML5",
-              "CSS3",
-              "SASS",
+              "Python",
+              "Pandas, NumPy, Scikit-learn",
+              "Matplotlib, Seaborn",
+              "EDA & Feature Engineering",
+              "Machine Learning (Regression, Classification, Clustering)",
+              "BeautifulSoup (Web Scraping)",
+            //  "SASS",
             ]}
             icon={<Code className="text-blue-400" />}
           />
 
           <SkillSection
-            title="Backend & Database"
+            title="BI, SQL & Big Data"
             skills={[
-              "Node.js",
-              "Express.js",
-              "MongoDB",
-              "MySQL",
-              "GraphQL",
-              "RESTful APIs",
-              "WebSocket",
-              "Database Modeling",
+              "MySQL, SQLite,MongoDB",
+              "Power BI (DAX, KPIs, Dashboards)",
+            //  "",
+              "Excel (Pivot Tables, VLOOKUP)",
+              "Hadoop (MapReduce, HDFS, YARN)",
+              "Apache Spark & PySpark (on GCP)",
+              "Data Pipeline Tools (Kafka, Airflow, Azure",
+            //  "Database Modeling",
             ]}
             icon={<Server className="text-blue-400" />}
           />
@@ -104,9 +106,10 @@ function Skills() {
           <SkillSection
             title="Core Strengths"
             skills={[
-              "MERN Stack Development",
-              "Object-Oriented Programming (OOP)",
-              "Data Structures and Algorithms",
+              "Data Analysis & Insight Extraction",
+              "Database Querying & Modeling",
+              "Dashboards & KPI Reporting",
+              "Problem Solving & Logical Thinking",
             ]}
             icon={<Star className="text-blue-400" />}
           />
