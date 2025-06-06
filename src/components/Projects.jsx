@@ -34,10 +34,8 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
         opacity: opacityProgress,
       }}
       className="group mb-3 sm:mb-8 sm:pb-3 last:mb-0"
-    >                                                                                  
-        <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative h-auto transition sm:group-even:pl-8">
-
-
+    >
+      <section className="card bg-[#111111] max-w-[64rem] sm:pr-8 relative h-auto transition sm:group-even:pl-8">
         <div className="pt-4 pb-7 px-4 sm:px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold text-white">{title}</h3>
 
@@ -85,12 +83,11 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
           <img
             src={Array.isArray(imageUrl) ? imageUrl[0] : imageUrl}
             alt={`${title} preview`}
-            className="w-full h-72 sm:h-80 object-cover mt-4 sm:mt-6 rounded-lg shadow-xl sm:absolute sm:top-16 sm:-right-40 sm:w-[28.25rem] sm:rounded-t-lg sm:shadow-2xl transition
+            className="w-full h-48 sm:h-56 object-cover mt-4 sm:mt-6 rounded-lg shadow-xl sm:absolute sm:top-16 sm:-right-32 sm:w-[22rem] sm:rounded-t-lg sm:shadow-2xl transition
               sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2
               sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2
-              sm:group-even:right-auto sm:group-even:-left-40 border border-[#262626]"
+              sm:group-even:right-auto sm:group-even:-left-32 border border-[#262626]"
           />
-
         </a>
       </section>
     </motion.div>
