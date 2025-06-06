@@ -72,7 +72,7 @@ const prefetchComponents = () => {
 
   // Prefetch after a delay to prioritize initial render
   setTimeout(() => {
-    prefetchComponent(() => import("./components/journey")); //changed : journey
+    prefetchComponent(() => import("./components/Journey")); //changed : journey
     prefetchComponent(() => import("./components/Skills"));
     prefetchComponent(() => import("./components/Experience"));
     prefetchComponent(() => import("./components/Projects"));
