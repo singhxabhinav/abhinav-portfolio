@@ -67,16 +67,20 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
               <FaGithub className="text-lg sm:text-xl" />
               Github
             </a>
-            <a
-              href={liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-primary flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center py-2 sm:py-3 px-4 sm:px-6"
-            >
-              <ExternalLink className="text-lg sm:text-xl" />
-              Live
-            </a>
+
+            {title === "Uber Trip Analysis" && liveLink ? (
+              <a
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center py-2 sm:py-3 px-4 sm:px-6"
+              >
+                <ExternalLink className="text-lg sm:text-xl" />
+                Live
+              </a>
+            ) : null}
           </div>
+          
         </div>
 
         <a href={liveLink} target="_blank" rel="noopener noreferrer">
