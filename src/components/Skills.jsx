@@ -39,8 +39,8 @@ function Skills() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
               {[
                 { icon: <FaPython color="#FFD43B" />, name: "Python" },
-                { icon: <SiPowerbi color="#F7DF1E" />, name: "Power Bi" },
                 { icon: <SiMicrosoftexcel color="#1572B6" />, name: "MS Excel" },//#1572B6
+                { icon: <SiPowerbi color="#F7DF1E" />, name: "Power Bi" },
                 { icon: <SiApachehadoop color="#66CCFF" />, name: "Hadoop" },
                 { icon: <SiApachespark color="#E25A1C" />, name: "Spark" },
                 { icon: <SiCplusplus color="#A8B9CC" />, name: "C++" },

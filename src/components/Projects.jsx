@@ -85,11 +85,12 @@ function Project({ title, description, tags, imageUrl, github, liveLink }) {
           <img
             src={Array.isArray(imageUrl) ? imageUrl[0] : imageUrl}
             alt={`${title} preview`}
-            className="w-full h-56 sm:h-64 object-cover mt-4 sm:mt-6 rounded-lg shadow-xl sm:absolute sm:top-16 sm:-right-40 sm:w-[28.25rem] sm:rounded-t-lg sm:shadow-2xl transition
+            className="w-full h-72 sm:h-80 object-cover mt-4 sm:mt-6 rounded-lg shadow-xl sm:absolute sm:top-16 sm:-right-40 sm:w-[28.25rem] sm:rounded-t-lg sm:shadow-2xl transition
               sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2
               sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2
               sm:group-even:right-auto sm:group-even:-left-40 border border-[#262626]"
           />
+
         </a>
       </section>
     </motion.div>
