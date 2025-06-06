@@ -18,9 +18,7 @@ export default function Journey() {
             Where’s the data? What study proves this? I wasn’t just curious; I
             needed cold, hard stats.
           </p>
-          <p className+"text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
-
-           </p>
+          <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify"></p>
           <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
             So, I went down the rabbit hole YouTube videos, scientific papers,
             hydration graphs analyzing patterns like a detective. I even ran my
@@ -28,10 +26,8 @@ export default function Journey() {
             just to test the logic. Turns out, I didn’t just quench my thirst, I
             discovered my love for data.
           </p>
-          <p className+"text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
+          <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify"></p>
 
-           </p>
-          
           <p className="text-gray-300 leading-relaxed text-lg sm:text-xl text-justify">
             That mindset led me to data science, where I turn raw numbers into
             insights, challenge assumptions, and find patterns others miss. From
