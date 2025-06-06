@@ -3,9 +3,8 @@ import {
   FaPython,
   FaGithub,
 } from "react-icons/fa";
-import {
-  SiC,                                                                          // To be check
-  
+import {                                                                        
+  SiCplusplus,           // To be check
   SiPowerbi,
   SiMongodb,
   SiMysql,
@@ -39,12 +38,12 @@ function Skills() {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
               {[
-                { icon: <FaPython color="#E34F26" />, name: "Python" },
-                { icon: <SiPowerbi color="#1572B6" />, name: "Power Bi" },
-                { icon: <SiMicrosoftexcel color="#F7DF1E" />, name: "MS Excel" },
+                { icon: <FaPython color="#FFD43B" />, name: "Python" },
+                { icon: <SiPowerbi color="#F7DF1E" />, name: "Power Bi" },
+                { icon: <SiMicrosoftexcel color="#1572B6" />, name: "MS Excel" },//#1572B6
                 { icon: <SiApachehadoop color="#66CCFF" />, name: "Hadoop" },
                 { icon: <SiApachespark color="#E25A1C" />, name: "Spark" },
-                { icon: <SiC color="#A8B9CC" />, name: "C" },
+                { icon: <SiCplusplus color="#A8B9CC" />, name: "C++" },
               //  { icon: <FaReact color="#61DAFB" />, name: "React" },
               //  { icon: <SiRedux color="#764ABC" />, name: "Redux" },
               //  { icon: <SiNextdotjs color="#FFFFFF" />, name: "Next.js" },
