@@ -9,7 +9,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaCode, FaDev } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useHeaderContext } from "../context/HeaderContext";
 import { socialLinks } from "../data/data.js";
-import resumelogo from "../assets/resumelogo2svg.png"; //
+import resumelogo from "../assets/profile-pic.png"; //
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState("#");
