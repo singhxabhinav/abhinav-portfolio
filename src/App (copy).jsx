@@ -58,7 +58,7 @@ const Projects = lazy(() => import("./components/Projects"));
 const Resume = lazy(() => import("./components/Resume"));
 const Contact = lazy(() => import("./components/Contact"));
 const Experience = lazy(() => import("./components/Experience"));
-const Journey = lazy(() => import("./components/Journey")); //changed : journey
+const Journey = lazy(() => import("./components/Journey"));        //changed : journey
 
 // Prefetch components after initial load
 const prefetchComponents = () => {
@@ -95,13 +95,6 @@ function App() {
           <Header />
           <Hero />
           <BlurredContentArea>
-            {/* 👇 New Journey Section inserted here */}
-            <ErrorBoundary>
-              <Suspense fallback={<LoadingSpinner />}>
-                <Journey />
-              </Suspense>
-            </ErrorBoundary>
-
             <ErrorBoundary>
               <Suspense fallback={<LoadingSpinner />}>
                 <Skills />
