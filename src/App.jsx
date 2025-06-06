@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -25,8 +25,12 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <div className="error-boundary p-3 sm:p-4 mx-3 sm:m-4 bg-red-900/20 border border-red-500 rounded-lg text-center">
-          <h2 className="text-lg sm:text-xl font-bold mb-2">Something went wrong</h2>
-          <p className="mb-3 sm:mb-4 text-sm sm:text-base">Please refresh the page or try again later</p>
+          <h2 className="text-lg sm:text-xl font-bold mb-2">
+            Something went wrong
+          </h2>
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
+            Please refresh the page or try again later
+          </p>
           <button
             onClick={() => this.setState({ hasError: false })}
             className="px-3 py-2 sm:px-4 sm:py-2 text-sm sm:text-base bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -54,6 +58,7 @@ const Projects = lazy(() => import("./components/Projects"));
 const Resume = lazy(() => import("./components/Resume"));
 const Contact = lazy(() => import("./components/Contact"));
 const Experience = lazy(() => import("./components/Experience"));
+const journey = lazy(() => import("./components/journey"));        //changed : journey
 
 // Prefetch components after initial load
 const prefetchComponents = () => {
@@ -67,6 +72,7 @@ const prefetchComponents = () => {
 
   // Prefetch after a delay to prioritize initial render
   setTimeout(() => {
+    prefetchComponent(() => import("./components/journey")); //changed : journey
     prefetchComponent(() => import("./components/Skills"));
     prefetchComponent(() => import("./components/Experience"));
     prefetchComponent(() => import("./components/Projects"));
