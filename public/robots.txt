@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://harshitshukla.com/sitemap.xml
+Sitemap: https://abhinavxsingh.com/sitemap.xml
