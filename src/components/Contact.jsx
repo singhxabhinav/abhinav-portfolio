@@ -138,7 +138,7 @@ function Contact() {
               {
                 icon: <FaWhatsapp className="text-6xl text-green-400" />,
                 title: "WhatsApp",
-                link: "https://api.whatsapp.com/send?phone=9805367767",
+                link: "https://api.whatsapp.com/send?phone=+919805367767",
                 label: "+91 9805367767",
               },
               {
